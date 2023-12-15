@@ -1,0 +1,28 @@
+.bar{
+    position:relative;
+    
+    
+    width:50%;
+    height:10px;
+    border-radius:512px;
+    border: 2px solid red;
+}
+.bar::after{
+    content: '';
+    position:absolute;
+    top:0;
+    left:0;
+    width:75%;
+    height:10px;
+    background:red;
+    animation: loading 2s ease ;
+}
+
+@keyframes loading{
+  0%{
+      width:1%;
+  }  
+  100%{
+      width:75%;
+  }  
+}

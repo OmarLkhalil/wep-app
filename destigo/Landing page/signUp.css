@@ -1,0 +1,150 @@
+body{
+    margin:0;
+    padding:0;
+    width:100%;
+    height:100%;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(242, 245, 255);
+}
+body section:nth-child(2) img{
+    
+    width:100%;
+    height:100%;
+}
+.form{
+    display:flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin:10%;
+    
+}
+.form h1{
+    font-size:2rem;
+}
+.form form{
+    display:flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    align-items: flex-start;
+   gap:25px; 
+}
+.form form label{
+    text-transform: uppercase;
+    font-size:1.2rem;
+}
+.form form input{
+    width:35vw;
+    border:none;
+    padding:20px;
+    border-bottom:2px solid ;
+    outline:none;
+    font-size:1.2rem;
+    background: rgb(242, 245, 255);
+}
+.label{
+    margin:20px 0;
+    display:flex;
+    
+    justify-content: space-evenly;
+    align-items: center;
+}
+.label input{
+    width:20px;
+    height:20px;
+    
+}
+.label label{
+    color:gray;
+    margin-right:10px;
+}
+.btns{
+    display:flex;
+    width:100%;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.btns button{
+    margin:20px 0;
+    width:45%;
+    height:3rem;
+    border-radius:50px;
+    color:white;
+    background: rgb(78, 128, 255);
+    /* transform: translateY(-1.5rem); */
+    border:none;
+    font-size:1.1rem;
+}
+body button:hover{
+    color:rgb(39, 90, 219);
+    background:white;
+    border:2px solid rgb(39, 90, 219);
+}
+body button:nth-child(2):hover{
+    color:white;
+    background:rgb(78, 128, 255);
+    border:2px solid white;
+}
+.btns button:nth-child(2){
+    color:rgb(78, 128, 255);
+    background: white; 
+    border: 2px solid rgb(78, 128, 255);
+}
+/*---------------------------------------media queries-------------------*/
+@media screen and (max-width:1000px){
+    body{
+        margin:0;
+        padding:0;
+        width:100%;
+        height:100%;
+        display:grid;
+        grid-template-columns: 1fr ;
+        font-family: Arial, Helvetica, sans-serif;
+        background: rgb(242, 245, 255);
+    }
+    body>section:nth-child(2){
+        display:none;
+    }
+    .form{
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        margin:10%;
+    
+    }
+    .form h1{
+        font-size:3rem;
+    }
+    .form form{
+        display:flex;
+        flex-direction:column;
+        justify-content: flex-start;
+        align-items: flex-start;
+       gap:25px; 
+    }
+    .form form label{
+        text-transform: uppercase;
+        font-size:1.2rem;
+    }
+    .form form input{
+        width:50vw;
+        border:none;
+        padding:20px;
+        border-bottom:2px solid ;
+        outline:none;
+        font-size:1.2rem;
+        background: rgb(242, 245, 255);
+    }
+    .btns{
+        display:flex;
+        width:100%;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        
+    }
+}

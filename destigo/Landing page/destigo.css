@@ -1,0 +1,722 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: rgb(242, 245, 255);
+}
+body button:hover {
+  color: rgb(39, 90, 219);
+  background: white;
+  border: 2px solid rgb(39, 90, 219);
+}
+
+body > img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 80%;
+}
+header nav {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav img {
+  width: 10%;
+  height: 10%;
+  transform: translateX(20px);
+  -webkit-transform: translatex(20px);
+  -moz-transform: translatex(20px);
+  -ms-transform: translatex(20px);
+  -o-transform: translatex(20px);
+}
+header nav > div > img {
+  width: 15px;
+  height: 15px;
+}
+nav .links {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 5%;
+  z-index: 2;
+}
+nav .links a {
+  color: black;
+  text-decoration: none;
+}
+header nav a:hover {
+  opacity: 0.5;
+}
+nav > div:nth-child(2) {
+  width: 23%;
+  height: 30px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: none;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.26) 2px 1px 4px;
+  text-align: center;
+}
+nav > div:nth-child(2) input {
+  width: 80%;
+  height: 20px;
+  border: none;
+  background: white;
+  outline: none;
+  text-align: left;
+}
+.dropBtn {
+  background: rgba(1, 16, 44, 0.678);
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 0 !important;
+  display: none;
+}
+.dropBtn span {
+  display: block;
+  width: 30px;
+  height: 5px;
+  margin: 5px;
+
+  background: rgba(182, 232, 252, 0.925);
+}
+.hide {
+  display: flex !important;
+}
+.btnInv {
+  background: rgba(204, 232, 243, 0.925);
+  color: rgba(1, 16, 44, 0.678);
+}
+.spanInv {
+  background: rgba(1, 16, 44, 0.678) !important;
+}
+
+.fold {
+  margin: 50px;
+  position: relative;
+
+  height: 100vh;
+}
+.fold h3 {
+  color: rgb(28, 127, 219);
+}
+.fold h1 {
+  position: relative;
+  font-size: 3.5rem;
+  color: rgb(21, 27, 79);
+}
+.fold h1::after {
+  content: "";
+  position: absolute;
+  width: 30%;
+  left: 0;
+  bottom: 5px;
+  height: 3px;
+  background: rgb(39, 90, 219);
+}
+.fold p {
+  transform: translateY(-1.5rem);
+  line-height: 2rem;
+}
+.fold img {
+  position: absolute;
+  top: 0;
+  left: 47%;
+  width: 45%;
+  height: 60%;
+}
+.fold button {
+  width: 12%;
+  height: 3rem;
+  border-radius: 12px;
+  color: white;
+  background: rgb(78, 128, 255);
+  /* transform: translateY(-1.5rem); */
+  border: none;
+}
+.six-cards .keys {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 10%;
+}
+.six-cards .keys p {
+  font-weight: 600;
+}
+.keyIndicator {
+  padding: 15px;
+  font-weight: 600;
+  border-bottom: 2px solid rgb(39, 90, 219);
+}
+
+.six-cards h1 {
+  text-align: center;
+}
+.cardGallery {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  background: rgb(231, 236, 255);
+  justify-content: center;
+  align-items: center;
+}
+
+.cardGallery .card {
+  position: relative;
+  width: 85%;
+  height: 85%;
+  background: rgb(237, 241, 253);
+  box-shadow: rgba(0, 0, 0, 0.26) 2px 1px 4px;
+  border-radius: 12px;
+  margin-left: 5%;
+  margin-right: 10px;
+}
+.cardGallery .card img {
+  width: 100%;
+  height: 85%;
+  border-radius: 12px;
+}
+.cardGallery .card img:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.cardGallery .card p {
+  height: 15%;
+  font-size: 18px;
+  text-align: center;
+}
+.browse {
+  margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background: rgb(252, 252, 252);
+  width: 80%;
+}
+.browser {
+  margin-top: 20px;
+  width: 50%;
+  height: 2rem;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  border: none;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.26) 2px 1px 4px;
+  text-align: center;
+}
+.browser img {
+  width: 20px;
+  height: 20px;
+  transform: translateX(130px);
+  display: none;
+}
+.browser input {
+  width: 30%;
+  height: 20px;
+  border: none;
+  background: white;
+  outline: none;
+  text-align: left;
+}
+.galleryBtns {
+  margin-top: 30px;
+  width: 90%;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.galleryBtns button {
+  height: 35px;
+  width: 12%;
+  background: rgb(39, 90, 219);
+  border: none;
+  outline: none;
+  color: white;
+  border-radius: 10px;
+}
+.browse .cardGallery1 {
+  margin-top: 50px;
+  width: 70%;
+  height: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.browse .card {
+  position: relative;
+  width: 85%;
+  height: 90%;
+  background: rgb(253, 253, 255);
+  box-shadow: rgba(0, 0, 0, 0.26) 2px 1px 4px;
+  border-radius: 12px;
+  margin-left: 5%;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.browse .card img {
+  margin-top: 20px;
+  width: 60%;
+  height: 75%;
+  border-radius: 12px;
+  justify-self: flex-start;
+  align-self: center;
+}
+.browse .card > p {
+  font-size: 12px;
+  transform: translateY(-4rem);
+}
+.browse .card h1 {
+  transform: translateY(-1.2rem);
+}
+/* .browse .card>img:first-child{
+    position: absolute;
+    top:-5%;
+    right:0;
+    background:radial-gradient(blue,white 90%);
+    padding:0;
+    width:9%;
+    height:8%;
+    border:none;
+    outline: none;
+} */
+.heart {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: rgb(164, 196, 255);
+  padding: 5px;
+  border-radius: 12px;
+}
+.heart-1 {
+  z-index: 2;
+  width: 24px;
+  height: 24px;
+  background: rgb(141, 141, 197);
+  clip-path: path(
+    "M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z"
+  );
+  transform: scale(1);
+  cursor: pointer;
+}
+.heart-1:hover {
+  background: rgb(39, 90, 219);
+}
+.coloredHeart {
+  background: rgb(39, 90, 219);
+}
+/* .heart{
+    position: absolute;
+    top:0;
+    right:0;
+    background:green;
+    width:10%;
+    height:10%;
+    display:flex;
+    justify-content: center;
+    align-items:flex-start;
+}
+.heart>img{
+    width:50%;
+    height:50%;
+} */
+.location {
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  left: 0;
+}
+.location > p {
+  transform: translateY(0) !important;
+}
+.location > img {
+  transform: translateY(-10px);
+  width: 24px !important;
+  height: 24px !important;
+}
+.app {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.app h1 {
+  margin-top: 100px;
+  font-size: 30px;
+}
+.app > div {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  justify-content: center;
+  align-items: center;
+}
+.app > div img {
+  width: 95%;
+  height: 95%;
+  box-shadow: rgba(0, 0, 0, 0.26) 2px 1px 4px;
+  border-radius: 12px;
+}
+.app1 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.app1 > p {
+  text-align: center;
+  width: 60%;
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+.app1 > div {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  justify-content: center;
+  align-items: center;
+}
+.app1 h1 {
+  margin-top: 100px;
+  font-size: 30px;
+}
+.card1 {
+  width: 85%;
+  height: 100%;
+  background: rgb(249, 250, 255);
+  box-shadow: rgba(0, 0, 0, 0.26) 2px 1px 4px;
+  border-radius: 12px;
+  margin-left: 5%;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card1 img {
+  width: 60%;
+  height: 65%;
+  border-radius: 12px;
+  margin-top: 30px;
+}
+.card1 h1 {
+  text-transform: capitalize;
+  font-size: 22px;
+}
+.card1 p {
+  height: 15%;
+  font-size: 16px;
+  width: 95%;
+  text-align: center;
+  color: gray;
+  text-transform: capitalize;
+}
+
+.reminder {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(39, 90, 219);
+  border-radius: 10px;
+  position: relative;
+  left: 15%;
+  top: 3rem;
+}
+.reminder > div p {
+  width: 60%;
+  transform: translateY(-15px);
+  font-size: 16px;
+  color: white;
+  line-height: 24px;
+}
+.reminder > div:first-child {
+  transform: translateX(20px);
+}
+.reminder > div h1 {
+  color: white;
+  font-weight: 500;
+}
+.reminder > div:nth-child(2) {
+  background: white;
+  border-radius: 18px;
+  width: 35%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  transform: translateX(-50px);
+}
+.reminder div button {
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 15px;
+  height: 30px;
+  margin: 5px 0;
+  border: none;
+  background: rgb(39, 90, 219);
+  color: white;
+}
+.reminder div button:hover {
+  color: rgb(39, 90, 219);
+  background: white;
+  border: 2px solid rgb(39, 90, 219);
+}
+.reminder div input {
+  border: none;
+  margin-left: 0;
+  outline: none;
+}
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: rgb(214, 225, 255);
+  height: 50vh;
+  margin-bottom: 0;
+}
+/* footer>div:first-child img{
+    transform: translateY(-50%);
+} */
+footer div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+footer div a:hover {
+  opacity: 0.5;
+}
+footer div a,
+footer div p {
+  color: gray;
+}
+footer .socials > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+footer .socials > div:first-child {
+  margin-top: 35px;
+}
+footer .socials p {
+  margin-left: 10px;
+}
+.end {
+  background: rgb(214, 225, 255);
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+}
+/*----------------------------------------------------media queries-----------------------------------------------*/
+@media screen and (max-width: 1000px) {
+  .fold {
+    justify-content: center;
+    height: 80vh;
+  }
+  .fold img {
+    display: none;
+  }
+  .fold button {
+    width: 30%;
+  }
+  .browser {
+    width: 60%;
+  }
+  .browser img {
+    transform: translateX(4rem);
+  }
+  .card1 h1 {
+    margin-top: 10px;
+    text-align: center;
+  }
+  .card1 p {
+    margin-top: 0;
+    font-size: 14px;
+  }
+  .app1 .card1 img {
+    width: 70%;
+    height: 50% !important;
+  }
+  .reminder {
+    width: 80%;
+    left: 10%;
+    flex-direction: column;
+  }
+  .reminder > div:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .reminder > div h1 {
+    /* text-align: center;
+        transform:translateX(-10%); */
+  }
+  .reminder > div p {
+    width: 80%;
+    text-align: center;
+  }
+
+  .reminder > div:nth-child(2) {
+    width: 60%;
+    margin-bottom: 20px;
+    margin-left: 10%;
+  }
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 100%;
+  }
+  footer div {
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 630px) {
+  nav .links {
+    width: 80%;
+    margin-left: 5px;
+  }
+  header nav img {
+    width: 20%;
+    height: 20%;
+  }
+  nav > div:nth-child(2) {
+    display: none;
+  }
+  .fold {
+    justify-content: center;
+    height: 100vh;
+    margin-bottom: 80px;
+  }
+}
+@media screen and (max-width: 600px) {
+  nav {
+    position: relative;
+    justify-content: space-around;
+  }
+  nav .links {
+    position: absolute;
+    flex-direction: column;
+    align-items: flex-end;
+    top: 68%;
+    right: 0;
+    margin-right: 0;
+
+    display: none;
+  }
+
+  nav .links a {
+    padding: 10px;
+    width: 100px;
+    background: rgb(191, 216, 236);
+    border-bottom: 1px solid rgb(135, 164, 187);
+  }
+  nav .dropBtn {
+    display: block;
+    margin-top: 1%;
+    transform: translateX(-20px);
+  }
+
+  .fold {
+    justify-content: center;
+    height: 100vh;
+    margin-bottom: 80px;
+  }
+  .six-cards {
+    margin-top: 200px;
+  }
+  .six-cards .keys p {
+    font-size: 10px;
+  }
+  .cardGallery {
+    grid-template-columns: 1fr 1fr;
+  }
+  .cardGallery .card p {
+    margin-top: 5px;
+  }
+
+  .browse {
+    width: 95%;
+    margin-left: 2%;
+  }
+
+  .browse .cardGallery1 {
+    grid-template-columns: 1fr;
+  }
+  .heart {
+    width: 22px;
+    height: 22px;
+  }
+  .heart-1 {
+    width: 22px;
+    height: 22px;
+  }
+  .galleryBtns button {
+    width: 22%;
+    font-size: 12px;
+    padding: 2px;
+  }
+  .app1 > div {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+  .app1 .card1 {
+    width: 70%;
+    height: 80%;
+    margin-left: 10%;
+  }
+  .reminder div button {
+    width: 20%;
+    padding: 0;
+    text-align: center;
+  }
+  .reminder > div:nth-child(2) {
+    width: 90%;
+    margin-left: 0;
+    transform: translateX(0px);
+  }
+  footer {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+  footer > div {
+    justify-content: center;
+    align-items: center;
+  }
+}
